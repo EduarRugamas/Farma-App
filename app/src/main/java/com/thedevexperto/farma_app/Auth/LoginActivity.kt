@@ -1,11 +1,13 @@
-package com.thedevexperto.farma_app
+package com.thedevexperto.farma_app.Auth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.thedevexperto.farma_app.R
 
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
+
     }
 }
