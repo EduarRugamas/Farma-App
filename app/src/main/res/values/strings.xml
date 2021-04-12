@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Farma-App</string>
-    <string name="frase">Donde lo encuentras todo</string>
+    <string name="frase">Donde si lo encuentras todo</string>
     <string name="derechos">Todos los derechos reservador</string>
     <string name="farma_app">Farma-App</string>
     <string name="registro_de_usuarios">Registro de usuarios</string>
@@ -10,4 +10,5 @@
     <string name="contra">Contraseña</string>
 
     <string name="btn_registro">Registrar Usuario</string>
+    <string name="btn_inicio">Iniciar Sesion</string>
 </resources>

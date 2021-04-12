@@ -18,11 +18,10 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         btn_registro.setOnClickListener {
-            val nombre_usuario = edt_name_usuario.text.toString()
             val correo = edt_email.text.toString()
             val contra = edt_password.text.toString()
 
-            create_user(nombre_usuario,correo,contra)
+            create_user(correo,contra)
         }
 
         btn_inicio_sesion.setOnClickListener {
@@ -37,13 +36,13 @@ class RegisterActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun create_user(name:String, email:String,pass:String){
-        if (name.isNotEmpty() && email.isNotEmpty() && pass.isNotEmpty()){
+    private fun create_user(email:String,pass:String){
+        if (email.isNotEmpty() && pass.isNotEmpty()){
             FirebaseAuth.getInstance()
                     .createUserWithEmailAndPassword(email,pass)
                     .addOnCompleteListener {
                         if (it.isSuccessful){
-                            showAlertSuccess("Usuario creado correctamente", name)
+                            showAlertSuccess("Usuario creado correctamente",email)
                         } else{
                             showAlertError("Se ha producido un error al crear el usuario")
                         }
@@ -61,20 +60,20 @@ class RegisterActivity : AppCompatActivity() {
         val dialog:AlertDialog =  builder.create()
         dialog.show()
     }
-    private fun showAlertSuccess(texto_success:String?, nombre_usuario:String){
+    private fun showAlertSuccess(texto_success:String?, email_user:String){
         val builder = AlertDialog.Builder(this)
-        builder.setTitle("Error")
+        builder.setTitle("Usuario creado con exito")
         builder.setMessage(texto_success)
         builder.setPositiveButton("Aceptar") { dialog, which ->
-            showLogin(nombre_usuario)
+            showLogin(email_user)
         }
         val dialog:AlertDialog =  builder.create()
         dialog.show()
     }
 
-    private fun showLogin(usuario:String){
+    private fun showLogin(email:String){
         val nav_login = Intent(this, LoginActivity::class.java).apply {
-            putExtra("user_name", usuario)
+            putExtra("user_name", email)
         }
         startActivity(nav_login)
     }
