@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".SplashScreen.SplashActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,12 +19,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="156dp"
+            android:layout_marginEnd="184dp"
             android:src="@drawable/ic_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.92"
+            app:layout_constraintVertical_bias="0.848"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -31,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:gravity="center"
-            android:text="Farma-App"
+            android:text="@string/farma_app"
             android:textColor="@color/white"
             android:textSize="35sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +45,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Donde lo encuentras todo"
+        android:text="@string/frase"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:layout_marginTop="50dp"
@@ -78,10 +79,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Todos los derechos reservador"
+            android:text="@string/derechos"
             android:textColor="#fff"
-            android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Auth.RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/desing_header"
+            app:layout_constraintBottom_toTopOf="@+id/edt_name_usuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/registro_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/registro_de_usuarios"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_registro_usuario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registro_usuario"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/edt_name_usuario"
+            android:layout_width="365dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:hint="@string/nombre_usuario"
+            android:textColorHint="@color/gris"
+            android:inputType="text"
+            android:textSize="19sp"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/color_fondo"
+            android:background="@drawable/custom_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="365dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/gris"
+            android:hint="@string/correo"
+            android:textColor="@color/color_fondo"
+            android:inputType="textEmailAddress"
+            android:textSize="19sp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_name_usuario"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="365dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/contra"
+            android:inputType="textPassword"
+            android:textSize="19sp"
+            android:textColor="@color/color_fondo"
+            android:textColorHint="@color/gris"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_email"
+            tools:ignore="Autofill" />
+
+        <Button
+            android:id="@+id/btn_registro"
+            android:layout_width="365dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/btn_naranja"
+            android:text="@string/btn_registro"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+        <Button
+            android:id="@+id/btn_inicio_sesion"
+            android:layout_width="365dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/btn_naranja"
+            android:text="@string/btn_registro"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/desing_footer"
+            android:layout_marginTop="65dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_registro"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

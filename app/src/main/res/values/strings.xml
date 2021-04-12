@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Farma-App</string>
+    <string name="frase">Donde lo encuentras todo</string>
+    <string name="derechos">Todos los derechos reservador</string>
+    <string name="farma_app">Farma-App</string>
+    <string name="registro_de_usuarios">Registro de usuarios</string>
+
+    <string name="nombre_usuario">Nombre de Usuario</string>
+    <string name="correo">Correo Electronico</string>
+    <string name="contra">Contraseña</string>
+
+    <string name="btn_registro">Registrar Usuario</string>
 </resources>

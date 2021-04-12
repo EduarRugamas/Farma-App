@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.thedevexperto.farma_app.Auth.LoginActivity
+import com.thedevexperto.farma_app.Auth.RegisterActivity
 import com.thedevexperto.farma_app.R
 
 class SplashActivity : AppCompatActivity() {
@@ -12,7 +13,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         android.os.Handler().postDelayed({
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this,RegisterActivity::class.java))
             finish()
         },5000)
 
