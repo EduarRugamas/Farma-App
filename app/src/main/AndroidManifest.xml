@@ -13,9 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FarmaApp"
         tools:ignore="AllowBackup">
-        <activity android:name=".Home.HistorialActivity"></activity>
-        <activity android:name=".Home.MedicamentosActivity" />
-        <activity android:name=".Home.FragmentActivity" /> <!-- Activity de splash -->
+
+        <!-- Activity de splash -->
         <activity
             android:name=".SplashScreen.SplashActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
@@ -34,6 +33,10 @@
         <activity
             android:name=".Auth.RegisterActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Home.HistorialActivity"/>
+        <activity android:name=".Home.MedicamentosActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
     </application>
 
 </manifest>

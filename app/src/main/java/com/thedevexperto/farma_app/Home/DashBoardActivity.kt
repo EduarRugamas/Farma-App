@@ -18,7 +18,6 @@ class DashBoardActivity : AppCompatActivity() {
         val correo = FirebaseAuth.getInstance().currentUser?.email
         text_userName.text = correo
 
-
         btn_cerrar_sesion.setOnClickListener {
             cerrar_sesion()
         }
