@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.thedevexperto.farma_app">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FarmaApp"
         tools:ignore="AllowBackup">
-
-        <!-- Activity de splash -->
+        <activity android:name=".Home.HistorialActivity"></activity>
+        <activity android:name=".Home.MedicamentosActivity" />
+        <activity android:name=".Home.FragmentActivity" /> <!-- Activity de splash -->
         <activity
             android:name=".SplashScreen.SplashActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
@@ -23,19 +24,16 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- Activity de dashboard o menu -->
+        </activity> <!-- Activity de dashboard o menu -->
         <activity
             android:name=".Auth.LoginActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".Home.MainActivity"
+            android:name=".Home.DashBoardActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Auth.RegisterActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            />
-
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>
 
 </manifest>

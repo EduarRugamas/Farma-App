@@ -6,10 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.thedevexperto.farma_app.Home.MainActivity
+import com.thedevexperto.farma_app.Home.DashBoardActivity
 import com.thedevexperto.farma_app.R
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_register.*
 
 class LoginActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
@@ -49,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun showHome(user_name:String){
-        val nav = Intent(this, MainActivity::class.java).apply {
+        val nav = Intent(this, DashBoardActivity::class.java).apply {
             putExtra("user-name",user_name)
         }
         startActivity(nav)

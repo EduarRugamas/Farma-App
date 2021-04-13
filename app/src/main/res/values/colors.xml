@@ -12,4 +12,9 @@
     <color name="color_fondo">#16697A</color>
     <color name="gris">#cccccc</color>
     <color name="btn_naranja">#FFA62B</color>
+
+    <color name="color_1">#333333</color>
+    <color name="color_2">#e9f8f1</color>
+    <color name="color_background">#ebebeb</color>
+    <color name="color_divider">#d6d6d6</color>
 </resources>
