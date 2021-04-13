@@ -28,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btn_Registro.setOnClickListener {
-
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
 
@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
                     .signInWithEmailAndPassword(correo,password)
                     .addOnCompleteListener{
                         if (it.isSuccessful){
-                            showHome(name)
+                            showHome()
                         }else {
                             Toast.makeText(this, "Usuario o contrasena incorrectos", Toast.LENGTH_LONG).show()
                         }
@@ -47,10 +47,8 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun showHome(user_name:String){
-        val nav = Intent(this, DashBoardActivity::class.java).apply {
-            putExtra("user-name",user_name)
-        }
+    private fun showHome(){
+        val nav = Intent(this, DashBoardActivity::class.java)
         startActivity(nav)
     }
 }
