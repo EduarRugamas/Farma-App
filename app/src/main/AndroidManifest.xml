@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.thedevexperto.farma_app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -8,14 +11,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FarmaApp">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.FarmaApp"
+        tools:ignore="AllowBackup">
+        <activity android:name=".Home.HistorialActivity"></activity>
+        <activity android:name=".Home.MedicamentosActivity" />
+        <activity android:name=".Home.FragmentActivity" /> <!-- Activity de splash -->
+        <activity
+            android:name=".SplashScreen.SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- Activity de dashboard o menu -->
+        <activity
+            android:name=".Auth.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Home.DashBoardActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Auth.RegisterActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>
 
 </manifest>

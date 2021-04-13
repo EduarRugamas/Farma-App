@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Farma-App</string>
+    <string name="frase">Donde si lo encuentras todo</string>
+    <string name="derechos">Todos los derechos reservador</string>
+    <string name="farma_app">Farma-App</string>
+    <string name="registro_de_usuarios">Registro de usuarios</string>
+
+    <string name="nombre_usuario">Nombre de Usuario</string>
+    <string name="correo">Correo Electronico</string>
+    <string name="contra">Contraseña</string>
+
+    <string name="btn_registro">Registrar Usuario</string>
+    <string name="btn_inicio">Iniciar Sesion</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="bienvendio_a">Bienvendio/a</string>
+    <string name="cerrar_seccion">Cerrar Seccion</string>
+    <string name="medicamentos">Medicamentos</string>
+    <string name="historial">Historial</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
